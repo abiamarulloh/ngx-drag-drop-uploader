@@ -1,0 +1,48 @@
+/* Apply default sans-serif font to the whole component */
+.upload-area {
+  font-family: Arial, Helvetica, sans-serif; /* Use default sans-serif fonts */
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  transition: border-color 0.3s;
+  background-color: #f9f9f9; /* Light background color */
+}
+
+.upload-area.is-dragover {
+  border-color: #00bcd4; /* Change border color when dragging over */
+}
+
+h3, h4 {
+  font-family: Arial, Helvetica, sans-serif; /* Use the same font for headings */
+}
+
+.error-message {
+  color: red; /* Red for error messages */
+  font-weight: bold; /* Bold for emphasis */
+}
+
+.success-message {
+  color: green; /* Green for success messages */
+  font-weight: bold; /* Bold for emphasis */
+  margin-top: 10px; /* Add some space above */
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.progress {
+  height: 10px;
+  background-color: #76c7c0; /* Color for progress */
+  border-radius: 4px;
+  transition: width 0.3s;
+}
+
+/* Style the validation messages list */
+.validation-messages {
+  list-style: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+}

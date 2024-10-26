@@ -1,0 +1,46 @@
+<div
+  class="upload-area"
+  [class.is-dragover]="isDragOver"
+  (dragover)="handleDragOver($event)"
+  (dragleave)="handleDragLeave()"
+  (drop)="handleDrop($event)"
+  (click)="triggerFileInput()"
+>
+  <p>{{ uploadMessage }}</p>
+
+  <input 
+    type="file" 
+    #fileInput
+    multiple 
+    [accept]="acceptedFileTypes" 
+    (change)="handleFileChange($event)" 
+    style="display: none;" 
+  />
+
+  <div *ngIf="files.length">
+    <h3>{{ filesHeader }}</h3>
+    <ul>
+      <li *ngFor="let file of files">{{ file.name }}</li>
+    </ul>
+  </div>
+
+  <div *ngIf="isUploading">
+    <h4>{{ uploadingHeader }}</h4>
+    <div class="progress-bar">
+      <div class="progress" [style.width.%]="uploadProgress"></div>
+    </div>
+  </div>
+
+  <div *ngIf="validationMessages.length">
+    <h4>{{ validationHeader }}</h4>
+    <ul>
+      <li *ngFor="let message of validationMessages" class="error-message">
+        {{ message }}
+      </li>
+    </ul>
+  </div>
+
+  <div *ngIf="successMessage" class="success-message">
+    <h4>{{ successMessage }}</h4>
+  </div>
+</div>

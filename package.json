@@ -1,0 +1,27 @@
+{
+  "name": "ngx-easy-drag-uploader",
+  "version": "1.0.0",
+  "description": "A drag and drop file uploader for Angular applications.",
+  "peerDependencies": {
+    "@angular/common": "^15.0.0 || ^16.0.0 || ^17.0.0",
+    "@angular/core": "^15.0.0 || ^16.0.0 || ^17.0.0"
+  },
+  "keywords": [
+    "angular",
+    "file-upload",
+    "drag-and-drop",
+    "ngx"
+  ],
+  "author": "Abi Amarulloh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abiamarulloh/ngx-easy-drag-uploader.git"
+  },
+  "scripts": {
+    "build": "ng build ngx-easy-drag-uploader"
+  },
+  "devDependencies": {
+    "ng-packagr": "^18.2.1"
+  }
+}
