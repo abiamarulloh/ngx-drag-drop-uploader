@@ -4,19 +4,27 @@
 
 1. [Introduction](#introduction)
 2. [Installation](#installation)
-3. [Usage](#usage)
+3. [Demo](#demo)
+4. [Usage](#usage)
    - [Importing the Module](#importing-the-module)
    - [Using the Component](#using-the-component)
    - [Handling Uploaded Files](#handling-uploaded-files)
-4. [Inputs](#inputs)
-5. [Events](#events)
-6. [Custom Styling](#custom-styling)
-7. [License](#license)
-8. [Contributing](#contributing)
+5. [Inputs](#inputs)
+6. [Events](#events)
+7. [Custom Styling](#custom-styling)
+8. [License](#license)
+9. [Contributing](#contributing)
+
 
 ## Introduction
 
 `ngx-easy-drag-uploader` is a versatile drag-and-drop file uploader component for Angular applications. It provides users with an intuitive interface to upload files easily, either by dragging them into the designated area or by clicking to select files.
+
+Angular Compatibility
+This library is compatible with the following versions of Angular:
+
+Angular 15, 16, and 17
+Ensure that your project’s Angular version is supported before installing the library.
 
 ## Demo
 
