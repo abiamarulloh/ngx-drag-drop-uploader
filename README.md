@@ -18,6 +18,10 @@
 
 `ngx-easy-drag-uploader` is a versatile drag-and-drop file uploader component for Angular applications. It provides users with an intuitive interface to upload files easily, either by dragging them into the designated area or by clicking to select files.
 
+## Demo
+
+Check out the live demo on StackBlitz: [Live Demo](https://stackblitz.com/~/github.com/abiamarulloh/example-ngx-easy-drag-uploader?file=src/app/app.component.html)
+
 ## Installation
 
 To install the `ngx-easy-drag-uploader` library, run the following command:
@@ -36,14 +40,18 @@ First, import the `NgxEasyDragUploaderModule` into your Angular application. You
 import { NgxEasyDragUploaderModule } from 'ngx-easy-drag-uploader';
 
 @NgModule({
-  declarations: [ /* your components */ ],
+  declarations: [
+    /* your components */
+  ],
   imports: [
     NgxEasyDragUploaderModule,
     // other imports...
   ],
-  bootstrap: [/* your root component */]
+  bootstrap: [
+    /* your root component */
+  ],
 })
-export class AppModule { }
+export class AppModule {}
 ```
 
 ### Using the Component
@@ -51,12 +59,13 @@ export class AppModule { }
 Now you can use the `<ngx-easy-drag-uploader>` component in your templates. Here’s a basic example:
 
 ```html
-<ngx-easy-drag-uploader 
-  (filesUploaded)="onFilesUploaded($event)" 
-  [uploadMessage]="'Drag and drop files here or click to select files'" 
-  [filesHeader]="'Uploaded Files:'" 
-  [uploadingHeader]="'Uploading files, please wait...'" 
-  [validationHeader]="'Please address the following issues:'">
+<ngx-easy-drag-uploader
+  (filesUploaded)="onFilesUploaded($event)"
+  [uploadMessage]="'Drag and drop files here or click to select files'"
+  [filesHeader]="'Uploaded Files:'"
+  [uploadingHeader]="'Uploading files, please wait...'"
+  [validationHeader]="'Please address the following issues:'"
+>
 </ngx-easy-drag-uploader>
 ```
 
@@ -75,22 +84,25 @@ onFilesUploaded(files: File[]) {
 
 The `ngx-easy-drag-uploader` component accepts several inputs that allow you to customize its behavior and appearance:
 
-- **`uploadMessage`**: 
+- **`uploadMessage`**:
+
   - Type: `string`
   - Description: Message displayed in the upload area.
   - Default: `'Drag and drop files here or click to select files'`
 
-- **`filesHeader`**: 
+- **`filesHeader`**:
+
   - Type: `string`
   - Description: Header for the list of uploaded files.
   - Default: `'Files:'`
 
-- **`uploadingHeader`**: 
+- **`uploadingHeader`**:
+
   - Type: `string`
   - Description: Message displayed during the upload process.
   - Default: `'Uploading...'`
 
-- **`validationHeader`**: 
+- **`validationHeader`**:
   - Type: `string`
   - Description: Header for validation messages.
   - Default: `'Validation Errors:'`
@@ -99,7 +111,7 @@ The `ngx-easy-drag-uploader` component accepts several inputs that allow you to 
 
 The component emits the following events:
 
-- **`filesUploaded`**: 
+- **`filesUploaded`**:
   - Description: This event is emitted when files are successfully uploaded.
   - Event payload: An array of `File` objects.
 
@@ -113,7 +125,7 @@ You can customize the styling of the uploader component using CSS. To do this, c
 
 ```css
 .drag-drop-uploader {
-  border: 2px dashed #4CAF50;
+  border: 2px dashed #4caf50;
   padding: 20px;
   text-align: center;
   background-color: #f9f9f9;
